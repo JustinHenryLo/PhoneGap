@@ -1,0 +1,27 @@
+Ceate new phone gap (empty)
+make lib folder in www
+add the "core" folder to lib
+rename to framework7
+copy css code from "http://framework7.io/docs/app-layout.html" to index.html
+make css folder in www
+make "my-app.css" in css folder
+make js folder in www
+make "my-app.js" in js folder
+copy js code from http://framework7.io/docs/init-app.html
+replace index.html links to proper links(directories)
+*css changes depending on device*
+==============================================
+urls:
+in my-app.js, edit routes: you reference by using path. eg.
+routes: [
+      {
+        path: '/about/',
+        url: 'about.html',
+      },
+    ],
+-----------------------------
+in html:
+<a href="/about/">About app</a>
+=============================================
+
+	
