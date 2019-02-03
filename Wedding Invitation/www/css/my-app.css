@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Befolk";
+    src: url("../res/fonts/Befolk/Befolk Script.otf")
+}
+@font-face {
+    font-family: "Lumberjack";
+    src: url("../res/fonts/Lumberjack/Lumberjack.otf")
+}
+
+
+.body{
+    margin: 0%;
+  }
+  
+.swiper-container{
+    height:100%;
+    background: black;
+  }
+
+  .landing { 
+    background-image:url(../res/wedding.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%; 
+    width:100%;
+    filter: blur(0px);
+  }
+
+  .landing-text{
+      top: 30%;
+      font-family: 'Befolk';
+      color: bisque;
+      text-align: center;
+      font-size: 17vw;
+  }
+
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .horizontal-center{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img-centered {
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+ }
+
+ .full-height{
+     height: 100%
+ }
