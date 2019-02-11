@@ -15,8 +15,35 @@ var app = new Framework7({
       path: '/about/',
       url: 'about.html',
     },
+    {
+      path: '/index/',
+      url: 'index.html',
+    },
+    {
+      path: '/timeline/',
+      url: 'timeline.html',
+    },
+    {
+      path: '/family/',
+      url: 'family.html',
+    },
+    {
+      path: '/reception/',
+      url: 'reception.html',
+    },
+    {
+      path: '/venue/',
+      url: 'venue.html',
+    },
+    {
+      path: '/attire/',
+      url: 'attire.html',
+    },
   ],
   // ... other parameters
 });
+
+var mainView = app.views.create('.view-main');
+
 
 

@@ -1,27 +1,55 @@
-<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
-
-<!-- Top Navbar-->
-<div class="navbar">
-    <div class="navbar-inner">
-        <div class="left">
-            <a href="#" class="back link">
-                <i class="icon icon-back"></i>
-                <span>Back</span>
-            </a>
-        </div>
-        <div class="center sliding">About</div>
-        <div class="right">
-            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+<div data-name="about" class="page" style="background-color:whitesmoke">
+    <div class="navbar color-white">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a class="link back">
+                    <i class="icon icon-back color-black"></i>
+                    <span class="ios-only">Back</span>
+                </a>
+            </div>
+            <div class="title" style="color:black;font-family:Lumberjack">About Us</div>
         </div>
     </div>
-</div>
-<div class="pages">
-    <div data-page="about" class="page">
-        <div class="page-content">
-            <div class="content-block">
-                <p>Here is About page!</p>
-                <p>Fusce eros lectus, accumsan eget mi vel, iaculis tincidunt felis. Nulla tincidunt pharetra sagittis. Fusce in felis eros. Nulla sit amet aliquam lorem, et gravida ipsum. Mauris consectetur nisl non sollicitudin tristique. Praesent vitae metus ac quam rhoncus mattis vel et nisi. Aenean aliquet, felis quis dignissim iaculis, lectus quam tincidunt ligula, et venenatis turpis risus sed lorem. Morbi eu metus elit. Ut vel diam dolor.</p>
+
+    <div class="page-content hide-navbar-on-scroll">
+        <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="30"
+            class="swiper-container swiper-init demo-swiper; color-white" style="height:50vh">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next color-white" style="height: 4vh"></div>
+            <div class="swiper-button-prev color-white" style="height: 4vh"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide elevation-24">
+                    <div class="image-card" style="background-image:url('../res/about/about-1.jpg');"></div>
+                </div>
+                <div class="swiper-slide elevation-24">
+                    <div class="image-card" style="background-image:url('../res/about/about-2.jpg')"></div>
+                </div>
+                <div class="swiper-slide elevation-24">
+                    <div class="image-card" style="background-image:url('../res/about/about-3.jpg')"></div>
+                </div>
+                <div class="swiper-slide elevation-24">
+                    <div class="image-card" style="background-image:url('../res/about/about-4.jpg')"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content card-content-padding"
+                style="text-align: justify;font-family: Arial, Helvetica, sans-serif; ">
+                <p>
+                    Indulgence announcing uncommonly met she continuing two unpleasing terminated. Now busy
+                    say down the shed eyes roof paid her. Of shameless collected suspicion existence in.
+                    Share walls stuff think but the arise guest. Course suffer to do he sussex it window advice.
+                    Yet matter enable misery end extent common men should. Her indulgence but assistance
+                    favourable cultivated everything collecting.
+                </p>
+
             </div>
         </div>
     </div>
 </div>
+
+
+
+
+
+<!-- </div> -->

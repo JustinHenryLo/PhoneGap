@@ -1,10 +1,10 @@
-<!DOCTYPE html>
 <html>
 
 <head>
     <!-- Required meta tags-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- Color theme for statusbar -->
     <meta name="theme-color" content="#2196f3">
@@ -14,37 +14,92 @@
     <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<body class='view-main'>
-    <div class="swiper-container">
-        <div class="swiper-pagination"></div>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="landing"></div>
-                <!-- <img src="res/arrow.png" style="filter:invert(1);width:30%;bottom:-10%"> -->
-                <span class="vertical-center horizontal-center landing-text">
-                    Alice & Bob
-                </span>
+<body>
+    <!-- App root element -->
+    <div id="app">
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <div class="page">
+                <div class="page-content">
+                    <div data-parallax="true" data-speed="600"
+                        class="swiper-container swiper-init demo-swiper-parallax">
+                        <div data-swiper-parallax="-23%" style="background-image:url('res/wedding.jpg');"
+                            class="swiper-parallax-bg"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="padding:0px">
+                                <div data-swiper-parallax="-300" class="swiper-slide-text">
+                                    <div class="landing-text">
+                                        Pia & Sam
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- background-image:url('res/wedding.jpg') -->
+                            <div class="swiper-slide content-main background-menu">
+                                <div id="mask" style="height:280%"></div>
+                                <div data-swiper-parallax="-200" class="swiper-slide-text" style="max-width: 100%;">
+                                    <div>
+
+                                        <a href="/about/">
+                                            <div class=" horizontal-center circle elevation-11"
+                                                style="background-image:url(../res/bride-groom-zoom.jpg);">
+                                                <div class="circle-text">• OUR STORY •</div>
+                                            </div>
+                                        </a>
+                                        <a href="/family/">
+                                            <div class=" horizontal-center circle elevation-11"
+                                                style="background-image:url(../res/bridesmaids.jpg);">
+                                                <div class="circle-text">• FAMILY •</div>
+                                            </div>
+                                        </a>
+                                        <a href="/timeline/">
+                                            <div class=" horizontal-center circle elevation-11"
+                                                style="background-image:url(../res/calendar.jpg);">
+                                                <div class="circle-text">• SCHEDULE •</div>
+                                            </div>
+                                        </a>
+                                        <a href="/reception/">
+                                            <div class=" horizontal-center circle elevation-11"
+                                                style="background-image:url(../res/cake.jpg);">
+                                                <div class="circle-text">• RECEPTION •</div>
+                                            </div>
+                                        </a>
+                                        <a href="/venue/">
+                                            <div class=" horizontal-center circle elevation-11"
+                                                style="background-image:url(../res/reception.jpg);">
+                                                <div class="circle-text">• VENUES •</div>
+                                            </div>
+                                        </a>
+                                        <a href="/attire/">
+                                            <div class=" horizontal-center circle elevation-11"
+                                                style="background-image:url(../res/dress.jpg);">
+                                                <div class="circle-text">• ATTIRE •</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-slide">Slide 2</div>
-            
         </div>
+
     </div>
-
-
-
-
-
-
-
-
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
