@@ -1,0 +1,9 @@
+.recipe_image {
+  border-radius: 100px;
+  
+}
+div.demo-lazy {
+  background: #aaa;
+  background-size: cover;
+  height: 60vw;
+}

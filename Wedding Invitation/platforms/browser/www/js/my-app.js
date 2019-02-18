@@ -39,6 +39,10 @@ var app = new Framework7({
       path: '/attire/',
       url: 'attire.html',
     },
+    {
+      path: '/creator/',
+      url: 'creator.html',
+    },
   ],
   // ... other parameters
 });
