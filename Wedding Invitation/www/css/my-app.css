@@ -326,3 +326,12 @@ background-attachment: fixed;  */
   max-width: 100vw !important;
 }
 
+.about-me-header{
+  text-align: center;
+  line-height: 0;
+}
+
+.about-me-content{
+  text-align: center;
+  font-weight: bold;
+}
